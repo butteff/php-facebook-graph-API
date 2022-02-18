@@ -9,11 +9,14 @@ You just need to use go_facebook() function and send parameters to it.
 $answer = go_facebook($endpoint, $items, 'POST', $config);
 ```
 
-$endpoint is the end of the API url, $items is an array of parameters with values, you can set 'POST' or 'GET' parameter, and forward the $config array from the config.php file.
+$endpoint is the end of the API url, $items is an array of parameters with values, you can set 'POST' or 'GET' string as a third function parameter, forward the $config array from the config.php file too.
 
 **An example:**
 
 ```
+require_once 'curl_graph.php';
+require_once 'config.php';
+
 // Take campaign's ads list:
 $items = [
   'fields' => 'name,configured_status,effective_status,creative'
@@ -22,7 +25,6 @@ $endpoint = 'act_'.$fb['account_id'].'/ads';
 $ads = go_facebook($endpoint, $items, 'GET', $fb);
 var_dump($ads);
 ```
-
 
 * Edit config.php file and add your credentials and tokens there.
 * Review index.php file for more examples.
