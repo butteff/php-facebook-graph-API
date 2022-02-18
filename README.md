@@ -5,7 +5,7 @@
 
 You just need to use go_facebook() function and send parameters to it.
 
-```
+```php
 $answer = go_facebook($endpoint, $items, 'POST', $config);
 ```
 
@@ -13,7 +13,7 @@ $endpoint is the end of the API url, $items is an array of parameters with value
 
 **An example:**
 
-```
+```php
 require_once 'curl_graph.php';
 require_once 'config.php';
 
