@@ -28,6 +28,7 @@ var_dump($ads);
 
 * Edit config.php file and add your credentials and tokens there.
 * Review index.php file for more examples.
+* Install php-curl extension on your system. If you need to upload images, insall php-imagic too.
 
 You can do other requests, based on the [official documentation](https://developers.facebook.com/docs/marketing-apis) _(just review the cURL tabs from the doc's examples, repeat the parameters and make sure, that the URL is valid)_
 
