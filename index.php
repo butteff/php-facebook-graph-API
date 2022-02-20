@@ -2,6 +2,18 @@
 require_once 'curl_graph.php';
 require_once 'config.php';
 
+// take profile info:
+
+$items = [
+  'fields' => 'id,name'
+];
+
+$endpoint = '/me';
+
+$profile = go_facebook($endpoint, $items, 'GET', $fb);
+var_dump($profile);
+
+// ------------------
 
 //take campaigns:
 
